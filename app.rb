@@ -2,11 +2,11 @@
 require "sinatra.rb"
 
 get "/" do
-    erb :index
+    erb :booklist
 end
 
 post "/" do
-    erb :sent
+    erb :booklist
 end
 # サーバの起動
 # ruby app.rb -o $IP -p $PORT
