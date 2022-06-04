@@ -1,0 +1,21 @@
+<!-- HTMLの内容 -->
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>sinatra web</title>
+    </head>
+    
+    <body>
+        <% name = params["target_name"] %>
+        <% time_japan = Time.now.getlocal("+09:00")%>
+        <p>now: <%= time_japan.hour %></p>
+        <p>hello, <%= name %></p>
+        <form action="/" method="POST">
+            <label>name: <input type="text" name="target_name"></label>
+            <input type="submit" value="submit">
+        </form>
+        <%= p(params["taret_name"]) %>
+        <%= p(params) %>
+    </body>
+</html>
